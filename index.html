@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<title>NW.js window blur bug</title>
+</head>
+<body>
+<script>
+(function() {
+const nw = require( "nw.gui" );
+const nwWindow = nw.Window.get();
+nwWindow.showDevTools();
+nwWindow.on( "focus", () => console.log( "focus 1" ) );
+nwWindow.on( "blur", () => console.log( "blur 1" ) );
+nwWindow.on( "focus", () => console.log( "focus 2" ) );
+nwWindow.on( "blur", () => console.log( "blur 2" ) );
+nwWindow.show();
+})()
+</script>
+</body>
+</html>

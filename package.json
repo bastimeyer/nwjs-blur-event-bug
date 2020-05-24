@@ -1,0 +1,12 @@
+{
+	"name": "nwjs-window-blur",
+	"version": "0.0.1",
+	"main": "index.html",
+	"chromium-args": "",
+	"window": {
+		"width": 960,
+		"height": 540,
+		"show": false,
+		"position": "center"
+	}
+}
